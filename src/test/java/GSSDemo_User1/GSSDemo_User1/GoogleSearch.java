@@ -42,6 +42,14 @@ public class GoogleSearch
 		Thread.sleep(2000);	
 	}
 	
+	@Test
+	public void searchAppium() throws InterruptedException
+	{		
+		driver.findElement(By.name("q")).sendKeys("Appium");
+		driver.findElement(By.name("q")).clear();
+		Thread.sleep(2000);	
+	}
+	
 	
 	@AfterTest
 	public void tearDown()
