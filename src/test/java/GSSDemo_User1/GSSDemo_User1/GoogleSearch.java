@@ -23,7 +23,16 @@ public class GoogleSearch
 	{		
 		driver.findElement(By.name("q")).sendKeys("UFT");
 		driver.findElement(By.name("q")).clear();
-		Thread.sleep(2000);	}
+		Thread.sleep(2000);	
+	}
+	
+	@Test
+	public void searchSelenium() throws InterruptedException
+	{		
+		driver.findElement(By.name("q")).sendKeys("Selenium");
+		driver.findElement(By.name("q")).clear();
+		Thread.sleep(2000);	
+	}
 	
 	
 	@AfterTest
