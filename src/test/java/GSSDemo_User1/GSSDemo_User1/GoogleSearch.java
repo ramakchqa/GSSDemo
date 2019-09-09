@@ -34,6 +34,14 @@ public class GoogleSearch
 		Thread.sleep(2000);	
 	}
 	
+	@Test
+	public void searchJava() throws InterruptedException
+	{		
+		driver.findElement(By.name("q")).sendKeys("Java");
+		driver.findElement(By.name("q")).clear();
+		Thread.sleep(2000);	
+	}
+	
 	
 	@AfterTest
 	public void tearDown()
